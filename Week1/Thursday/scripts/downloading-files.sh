@@ -1,0 +1,1 @@
+wget https://pic16b.quarto.pub/pic-16b-w23/posts/hw0/penguin.jpg -O p.jpg

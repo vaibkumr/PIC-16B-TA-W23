@@ -1,0 +1,1 @@
+cat content.txt | mail -s "URGENT!!!" vaibhavk@gatech.edu

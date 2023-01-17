@@ -1,0 +1,11 @@
+{
+  "hash": "d18a4f2c7715e25bff8571bc1ab30d9c",
+  "result": {
+    "markdown": "---\ntitle: Some Basic Python Commands\nauthor: PIC 16B Students\ncategories:\n  - code\nformat:\n  html:\n    code-fold: true\n    code-tools: true\n---\n\nThis is our Python blogpost!\n\nSome Cool Python Code Below:\n\n::: {.cell execution_count=1}\n``` {.python .cell-code}\nimport numpy as np\nimport matplotlib.pyplot as plt\n\nr = np.arange(0, 2, 0.01)\ntheta = 2 * np.pi * r\nfig, ax = plt.subplots(\n  subplot_kw = {'projection': 'polar'} \n)\nax.plot(theta, r)\nax.set_rticks([0.5, 1, 1.5, 2])\nax.grid(True)\nplt.show()\n```\n\n::: {.cell-output .cell-output-display}\n![](index_files/figure-html/cell-2-output-1.png){}\n:::\n:::\n\n\nMore Python:\n\n::: {.cell execution_count=2}\n``` {.python .cell-code}\na = 10\nprint(a)\n```\n\n::: {.cell-output .cell-output-stdout}\n```\n10\n```\n:::\n:::\n\n\nEquations:\n$\\mathbb{A}_c = \\pi r^2$\n\nJS Code:\n\n```{javascript}\n\nconsole.log(\"test\")\n```\n\n```{js}\n\nconsole.log(\"test\")\n```\n\n",
+    "supporting": [
+      "index_files"
+    ],
+    "filters": [],
+    "includes": {}
+  }
+}

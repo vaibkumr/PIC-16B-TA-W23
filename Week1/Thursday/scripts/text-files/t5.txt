@@ -1,0 +1,1 @@
+The console of Konrad Zuse's Z3 had a keyboard in 1941, as did the Z4 in 1942–1945. But these consoles could only be used to enter numeric inputs and were thus analogous to those of calculating machines; programs, commands, and other data were entered via paper tape. Both machines had a row of display lamps for results.

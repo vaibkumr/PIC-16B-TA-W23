@@ -1,0 +1,52 @@
+---
+title: "Some Basic Python Commands"
+author: "PIC 16B Students"
+categories: [code]
+format:
+  html:
+    code-fold: true
+    code-tools: true
+jupyter: python3
+---
+
+This is our Python blogpost!
+
+Some Cool Python Code Below:
+```{python}
+
+import numpy as np
+import matplotlib.pyplot as plt
+
+r = np.arange(0, 2, 0.01)
+theta = 2 * np.pi * r
+fig, ax = plt.subplots(
+  subplot_kw = {'projection': 'polar'} 
+)
+ax.plot(theta, r)
+ax.set_rticks([0.5, 1, 1.5, 2])
+ax.grid(True)
+plt.show()
+```
+
+More Python:
+
+```{python}
+
+a = 10
+print(a)
+```
+
+
+Equations:
+$\mathbb{A}_c = \pi r^2$
+
+JS Code:
+```{javascript}
+
+console.log("test")
+```
+
+```{js}
+
+console.log("test")
+```
