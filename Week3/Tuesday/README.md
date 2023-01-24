@@ -35,4 +35,9 @@ Second one can lead to [SQLInjection](https://en.wikipedia.org/wiki/SQL_injectio
 - CSVs are stored as readable text files, SQL database files are written in a fast-indexing special data format in C.
 - Reading and editing CSVs is slower than SQL DBs
 - Concurrent writing is a problem in CSVs (race conditions)
-- Checkout `csv_to_sqldb.py`
+
+## CSV to SQL DB:
+- `csv_to_sqldb.py`
+
+## Read SQL_DB in Pandas:
+- `read_sql_with_pandas.py`
