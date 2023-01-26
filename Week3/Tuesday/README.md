@@ -6,7 +6,7 @@ A query language used to interact with relational databases (think tables).
 Play with SQL: https://www.mycompiler.io/new/sql
 
 # What are relational databases?
-- Imagine a database of multiple tables
+- Imagine a database of multiple tabless
 - Each table with multiple rows and columns 
 - Each column has a fixed data type
 - Tables can be related to one another through the use of keys

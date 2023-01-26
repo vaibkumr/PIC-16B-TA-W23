@@ -45,67 +45,60 @@ ul.task-list li input[type="checkbox"] {
 
 
 
-<section id="why-sqlite" class="level1">
-<h1>Why SQLite?</h1>
-<p><img src="workflow.png" class="img-fluid"></p>
+<section id="plotly-and-hw1" class="level1">
+<h1>Plotly and HW1</h1>
+<section id="f-strings" class="level2">
+<h2 class="anchored" data-anchor-id="f-strings">f-strings</h2>
+<p><a href="https://realpython.com/python-string-formatting/#3-string-interpolation-f-strings-python-36">f-strings</a></p>
+<pre><code>    var = "f-string"
+    f"this is a fancy {var}"</code></pre>
 </section>
-<section id="what-is-sql-structured-query-language" class="level1">
-<h1>What is SQL (Structured Query Language)?</h1>
-<p>A query language used to interact with relational databases (think tables). Play with SQL: https://www.mycompiler.io/new/sql</p>
+<section id="vectorized-operations" class="level2">
+<h2 class="anchored" data-anchor-id="vectorized-operations">Vectorized Operations</h2>
+<p><code>vectorized_operators.ipynb</code></p>
 </section>
-<section id="what-are-relational-databases" class="level1">
-<h1>What are relational databases?</h1>
+<section id="errors" class="level2">
+<h2 class="anchored" data-anchor-id="errors">Errors?</h2>
 <ul>
-<li>Imagine a database of multiple tabless</li>
-<li>Each table with multiple rows and columns</li>
-<li>Each column has a fixed data type</li>
-<li>Tables can be related to one another through the use of keys</li>
+<li>Always activate your environment!</li>
+</ul>
+<pre><code>conda activate PIC16B</code></pre>
+<ul>
+<li>`… requires nbformat&gt;=4.2.0 but it is not installed<code></code> pip3 install –upgrade nbformat ipykernel</li>
+</ul>
+<pre><code>
+- `ModuleNotFoundError`</code></pre>
+<p>pip3 install <module_name> ```</module_name></p>
+<ul>
+<li><p>Plotly doesn’t render? Open <code>jupyter notebook</code> on browser. Sometimes VSCode might have problems displaying some figures. Plotly extensively use javascript libraries, browsers support those better than VSCode.</p></li>
+<li><p>More? Google – Stackoverflow threads or github issues.</p></li>
 </ul>
 </section>
-<section id="sqlite" class="level1">
-<h1>SQLite</h1>
+<section id="why-plotly" class="level2">
+<h2 class="anchored" data-anchor-id="why-plotly">Why plotly?</h2>
 <ul>
-<li>With python, one way to deal with databases and running SQL queries on them is <a href="https://docs.python.org/3/library/sqlite3.html">SQLite3</a></li>
-</ul>
-<section id="workflow" class="level2">
-<h2 class="anchored" data-anchor-id="workflow">Workflow:</h2>
-<ol type="1">
-<li>Create a connection <code>con = sqlite3.connect('&lt;DatabaseName.db'&gt;)</code></li>
-<li>Create a cursor <code>cur = con.cursor()</code></li>
-<li>Run queries <code>cur.execute('&lt;query&gt;')</code> or multiple queries <code>cur.executescript('&lt;query&gt;')</code></li>
-<li>Commit the changes <code>con.commit()</code></li>
-<li>Close the connection <code>con.close()</code></li>
-</ol>
-</section>
-<section id="sqlinjection-attacks" class="level2">
-<h2 class="anchored" data-anchor-id="sqlinjection-attacks">SQLInjection Attacks</h2>
-<ul>
-<li>Execute queries like this:</li>
-</ul>
-<p><code>cur.execute("INSERT INTO students VALUES (?, ?, ?);", (id, username, sex))</code></p>
-<ul>
-<li>Instead of this:</li>
-</ul>
-<p><code>cur.execute(f"INSERT INTO students VALUES ({id}, {username}, {sex});"</code> Second one can lead to <a href="https://en.wikipedia.org/wiki/SQL_injection">SQLInjection</a> attacks. See <code>sqlite_sql_injection_attacks.py</code>.</p>
-</section>
-<section id="csv-vs-sql-databases" class="level2">
-<h2 class="anchored" data-anchor-id="csv-vs-sql-databases">CSV vs SQL Databases</h2>
-<ul>
-<li>CSVs are stored as readable text files, SQL database files are written in a fast-indexing special data format in C.</li>
-<li>Reading and editing CSVs is slower than SQL DBs</li>
-<li>Concurrent writing is a problem in CSVs (race conditions)</li>
+<li>Interactive plots! Interactive plots! Interactive plots! Interactive plots!</li>
+<li>Animated plots</li>
+<li>Real-time updates (for webapps)</li>
+<li>Plotly Python Docs: https://plotly.com/python/</li>
+<li>Plotly Actually useful Docs: https://plotly.com/python/plotly-express/</li>
 </ul>
 </section>
-<section id="csv-to-sql-db" class="level2">
-<h2 class="anchored" data-anchor-id="csv-to-sql-db">CSV to SQL DB:</h2>
+<section id="cool---animated-plots" class="level2">
+<h2 class="anchored" data-anchor-id="cool---animated-plots">Cool - Animated Plots</h2>
 <ul>
-<li><code>csv_to_sqldb.py</code></li>
+<li>https://plotly.com/python/animations/</li>
+<li><code>plotly-animated.py</code></li>
 </ul>
 </section>
-<section id="read-sql_db-in-pandas" class="level2">
-<h2 class="anchored" data-anchor-id="read-sql_db-in-pandas">Read SQL_DB in Pandas:</h2>
+<section id="plotly-express" class="level2">
+<h2 class="anchored" data-anchor-id="plotly-express">Plotly Express</h2>
+<p>https://plotly.com/python/plotly-express/</p>
+</section>
+<section id="interactive-plot" class="level2">
+<h2 class="anchored" data-anchor-id="interactive-plot">Interactive Plot</h2>
 <ul>
-<li><code>read_sql_with_pandas.py</code></li>
+<li><code>plotly-hello.py</code></li>
 </ul>
 </section>
 </section>
