@@ -1,7 +1,5 @@
 import plotly.express as px
 
-# https://www.aei.org/carpe-diem/animated-chart-of-the-day-worlds-top-ten-billionaires-2000-to-2022/
-
 df = px.data.gapminder()
 print(df.columns)
 fig = px.scatter(
