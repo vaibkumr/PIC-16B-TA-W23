@@ -38,3 +38,7 @@ CSS Diner: https://flukeout.github.io/
 1. Press Option + ⌘ + J (on macOS), or Shift + CTRL + J to open console
 2. Type `$$(<css_query>)` to run  a css_query
 3. Tip: Press control+l to clear the clutter! (usually works on any console -- OS terminal or browser or vscode)
+
+
+
+<elem attri1="val1" attr2="val2"...> TEXT </elem>
