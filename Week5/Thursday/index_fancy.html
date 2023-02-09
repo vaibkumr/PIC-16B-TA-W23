@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>PIC 16B CSS Demo</title>
+    <style>
+        /* Global Styles */
+        body {
+          font-family: 'Futura', sans-serif;
+          background-color: #002b36;
+          color: #93a1a1;
+          text-align: center;
+          padding: 50px;
+        }
+  
+        /* Headline Styles */
+        h1 {
+          font-size: 48px;
+          color: #d33682;
+          margin-bottom: 30px;
+          text-shadow: 1px 1px #002b36;
+        }
+  
+        /* Paragraph Styles */
+        p {
+          font-size: 18px;
+          margin-bottom: 50px;
+        }
+  
+        /* Label Styles */
+        label {
+          display: block;
+          text-align: center;
+          font-size: 18px;
+          margin-bottom: 10px;
+        }
+  
+        /* Text Field Styles */
+        input[type="text"] {
+          padding: 10px;
+          font-size: 16px;
+          border-radius: 5px;
+          border: 2px solid #93a1a1;
+          margin-bottom: 20px;
+          width: 300px;
+          text-align: center;
+          background-color: #073642;
+          color: #93a1a1;
+        }
+  
+        /* Submit Button Styles */
+        button[type="submit"] {
+          padding: 10px 20px;
+          background-color: #d33682;
+          color: #93a1a1;
+          border-radius: 5px;
+          border: 2px solid #93a1a1;
+          font-size: 20px;
+          cursor: pointer;
+          box-shadow: 1px 1px #002b36;
+        }
+  
+        /* Link Styles */
+        a {
+          color: #d33682;
+          text-decoration: none;
+          font-size: 16px;
+          margin-top: 50px;
+          display: inline-block;
+        }
+    </style>
+  </head>
+  <body>
+    <h1>A simple message bank</h1>
+    <a href="#">[Submit a message]</a>
+    <a href="#">[View messages]</a>
+
+    <p>This is a simple webpage frontend for interacting with your Flask API.</p>
+
+    <label for="field1">Name:</label>
+    <input type="text" id="field1" name="field1">
+
+    <br><br>
+
+    <label for="field2">Message:</label>
+    <input type="text" id="field2" name="field2">
+
+    <br><br>
+
+    <button type="submit">Submit</button>
+
+    <br><br>
+    <a href="index.html">Make it dull</a><br>
+  </body>
+</html>
