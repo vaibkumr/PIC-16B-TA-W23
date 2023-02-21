@@ -9,7 +9,7 @@
 ## Office Hours
 | **Days**             | **Time**      | **Location**                |
 |----------------------|---------------|-----------------------------|
-| Tuesday and Thursday | 3:00pm-4:00pm | TBD |
+| Tuesday and Thursday | 3:00pm-4:00pm | MS 3974 |
 
 ## Contact
 [vaibhavk@g.ucla.edu](mailto:vaibhavk@g.ucla.edu?subject=PIC16B) 
