@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.2.313">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>readme</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1.6em;
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="README_files/libs/clipboard/clipboard.min.js"></script>
+<script src="README_files/libs/quarto-html/quarto.js"></script>
+<script src="README_files/libs/quarto-html/popper.min.js"></script>
+<script src="README_files/libs/quarto-html/tippy.umd.min.js"></script>
+<script src="README_files/libs/quarto-html/anchor.min.js"></script>
+<link href="README_files/libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="README_files/libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="README_files/libs/bootstrap/bootstrap.min.js"></script>
+<link href="README_files/libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="README_files/libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+
+
+</head>
+
+<body class="fullcontent">
+
+<div id="quarto-content" class="page-columns page-rows-contents page-layout-article">
+
+<main class="content" id="quarto-document-content">
+
+
+
+<section id="neural-networks" class="level1">
+<h1>Neural Networks</h1>
+<ul>
+<li><code>nn.html</code></li>
+<li>A neural network is a type of machine learning algorithm inspired by the structure and function of the human brain.</li>
+<li>It is composed of layers of interconnected nodes, or neurons, that perform mathematical operations on input data to produce an output.</li>
+<li>The connections between neurons are represented by weights, which are adjusted during training to improve the network’s performance.</li>
+</ul>
+<section id="training" class="level2">
+<h2 class="anchored" data-anchor-id="training">Training:</h2>
+<ul>
+<li>Updating weights iteratively based on the feedback from a loss function<br>
+</li>
+<li>Feedback = gradient of a loss function wrt weights</li>
+<li>Updation is typically done using an optimization algorithm</li>
+<li>When to stop the update? After n epochs or after update is very small.</li>
+<li>Foward pass: Data -&gt; weights -&gt; output</li>
+<li>Backward pass: loss -&gt; gradient -&gt; updated weights</li>
+</ul>
+</section>
+<section id="designing-a-neural-net" class="level2">
+<h2 class="anchored" data-anchor-id="designing-a-neural-net">Designing a neural net</h2>
+<ol type="1">
+<li>Identify Task – Regression? Classification?</li>
+<li>Identify Data type – Tabular data? Time series data? Images? Text? Audio? ECG waves?</li>
+<li>Identify model type based on data and task, some recommendations:
+<ul>
+<li>DNNs for tabular</li>
+<li>CNNs for images</li>
+<li>CNNs for Audio</li>
+<li>RNNs for Time series data</li>
+<li>Transformers for Time series data</li>
+<li>Transformers for Audio</li>
+<li>CNNs + Transformers for Audio</li>
+<li>Transformers for Text</li>
+<li>TRANSFORMERS FOR EVERYTHING (if you have a lot of data)! THEY JUST WORK!!</li>
+<li>DNN = Deep Neural Network</li>
+<li>CNN = Convolutional Neural Network</li>
+<li>RNN = Recurrent Neural Network</li>
+</ul></li>
+<li>Identify the loss function based on task, some recommendations:
+<ul>
+<li>Regression: mean squared error, mean absolute error</li>
+<li>Classification: Cross entropy, Kullback–Leibler divergence</li>
+</ul></li>
+<li>Identify Metrics to evaluate performance, some recommendations:
+<ul>
+<li>Regression: mean squared error, mean absolute error</li>
+<li>Binary Classification: Precision, Recall, F1 Score, Accuracy, AUC-ROC</li>
+<li>Multi-Class Classification: Macro F1, Micro F1, Accuracy</li>
+</ul></li>
+<li>Identify Optimizer based on… intuition and latest research, some recommendations:
+<ul>
+<li>None, just use <code>adam</code> it works, almost always.</li>
+</ul></li>
+<li>(Optional) Identify Learning Scheduler based on… intuition.</li>
+</ol>
+</section>
+</section>
+<section id="keras-callbacks" class="level1">
+<h1>Keras Callbacks</h1>
+<p><a href="https://colab.research.google.com/drive/1AzSezlsHrovE4T5jDjvs3kWMfETUhyJW?usp=sharing">Colab Notebook</a></p>
+</section>
+<section id="train-validation-test-split" class="level1">
+<h1>Train-Validation-Test Split</h1>
+<ol type="1">
+<li>Train on training data</li>
+<li>Use Validation data as a feedback to change hyperparameters and improve performance.</li>
+<li>Manually keep doing step 1 and 2 until satisfied</li>
+<li>Use Test data to report final results</li>
+</ol>
+</section>
+<section id="what-hyperparameters" class="level1">
+<h1>What hyperparameters?</h1>
+<p>Hyperparameters are model/training parameters we control (they are not learned). Parameters such as model weights are learned. - learning rate, - number of hidden layers - number of neurons in each layer - regularization strength - more…</p>
+</section>
+<section id="tracking-losses" class="level1">
+<h1>Tracking Losses</h1>
+<p><a href="https://colab.research.google.com/drive/1T29gYRrgLw6-vrueFtT22YvPltTONcta?usp=sharing">Colab Notebook</a></p>
+</section>
+
+</main>
+<!-- /main column -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    target: function(trigger) {
+      return trigger.previousElementSibling;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+  function tippyHover(el, contentFn) {
+    const config = {
+      allowHTML: true,
+      content: contentFn,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start'
+    };
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      return note.innerHTML;
+    });
+  }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+</div> <!-- /content -->
+
+
+
+</body></html>

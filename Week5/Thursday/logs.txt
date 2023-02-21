@@ -1,0 +1,4 @@
+Called function add with args: (101, 999999) and kwargs: {}
+Called function add with args: (2, 1) and kwargs: {}
+Called function koch_snowflake with args: (5,) and kwargs: {'scale': 10, 'figsize': (3, 3), 'dpi': 300}
+Called function koch_snowflake with args: (2,) and kwargs: {'scale': 10, 'figsize': (3, 3), 'dpi': 300}

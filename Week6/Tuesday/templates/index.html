@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+
+{% block title %}
+    Talk!
+{% endblock %}
+
+{% block header %}
+  <h1>Talk! Submit a cool message...</h1>
+{% endblock %}
+
+{% block content %}
+<form method="post" action="{{ url_for('submit') }}">
+    <label for="username">Username:</label>
+    <input type="text" name="username" id="username" required>
+    <br>
+    <label for="message">Message:</label>
+    <textarea name="message" id="message" required></textarea>
+    <br>
+    <input type="submit" value="Submit">
+</form>
+{% endblock %}

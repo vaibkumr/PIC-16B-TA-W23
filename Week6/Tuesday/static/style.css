@@ -1,0 +1,108 @@
+html {
+    font-family: Arial, sans-serif;
+    background: #dcdcdc;
+    padding: 1rem;
+}
+body {
+    max-width: 900px;
+    margin: 0 auto;
+}
+h1 {
+    color: #444444;
+    font-family: 'Montserrat', sans-serif;
+    margin: 1rem 0;
+    text-align: center;
+    letter-spacing: 0.1em;
+   /* text-transform: uppercase;
+    */
+    font-size: 2em;
+}
+a {
+    color: #5f9fcc;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav {
+    background: #f7f7f7;
+    padding: 0.5rem;
+    border-radius: 25px;
+    margin: 1rem 0;
+    border: 1px solid #cccccc;
+}
+nav ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+}
+nav ul li a {
+    display: block;
+    padding: 0.5rem;
+    font-size: 1.2em;
+}
+.content {
+    padding: 0 1rem 1rem;
+    background: #f7f7f7;
+    border-radius: 25px;
+    border: 1px solid #cccccc;
+    margin-bottom: 1rem;
+}
+.flash {
+    text-align: center;
+    margin: 1em 0;
+    padding: 1em;
+    background: #f7d8d8;
+    border: 1px solid #ff9999;
+    color: #990000;
+    font-weight: bold;
+}
+/* Form Styles */
+form {
+    max-width: 500px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 2rem;
+    border-radius: 5px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+form h2 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    text-align: center;
+    color: #555;
+}
+form label {
+    display: block;
+    margin-bottom: 0.5rem;
+    color: #555;
+}
+form input, form textarea, form select {
+    width: 100%;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border-radius: 5px;
+    border: none;
+    background-color: #f9f9f9;
+    color: #333;
+    font-size: 1.2rem;
+    font-family: 'Montserrat', sans-serif;
+}
+form input[type="submit"] {
+    background-color: #5f9fcc;
+    color: #fff;
+    font-size: 1.2rem;
+    padding: 1rem 2rem;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+form input[type="submit"]:hover {
+    background-color: #5f9fcc;
+}
+form input:focus, form textarea:focus, form select:focus {
+    outline: none;
+    background-color: #eee;
+}

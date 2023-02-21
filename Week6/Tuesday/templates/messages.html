@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+
+{% block title %}
+    Read!
+{% endblock %}
+
+{% block header %}
+  <h1>Messages from {{ username }}</h1>
+{% endblock %}
+
+{% block content %}
+{% if messages %}
+<ul>
+    {% for message in messages %}
+        <li>{{ message.username }}: {{ message.message }}</li>
+    {% endfor %}
+</ul>
+{% else %}
+<p>No messages found for {{ username }}.</p>
+{% endif %}
+{% endblock %}
+
