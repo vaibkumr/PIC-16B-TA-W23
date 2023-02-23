@@ -1,0 +1,29 @@
+~/Documents/flower_images
+    - sunflower
+        - sf1.png
+        - sf2.png
+    - roses
+        - r1.png
+        - r2.png
+    - tulips
+        - t1.png
+        - t2.png
+
+
+X = [
+    sf1.png,
+    sf2.png,
+    r1.png,
+    r2.png,
+    t1.png,
+    t2.png,    
+]
+
+y = [
+    sunflower,
+    sunflower,
+    roses,
+    roses,
+    tulips,
+    tulips,
+]
