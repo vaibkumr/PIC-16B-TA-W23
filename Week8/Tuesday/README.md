@@ -1,3 +1,5 @@
+[[Colab Notebook]](https://colab.research.google.com/drive/1FtnGxF0koQUtkma2fl8FsMDkP7xeVycZ?usp=sharing)
+
 # Time series data
 Modeling a time series data:
 ![](assets/timeseries.png)
