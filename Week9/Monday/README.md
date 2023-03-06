@@ -1,9 +1,37 @@
+# Short URL for this page: rb.gy/wwnbvs
+
 # Transformers
-- RNNs don't work for long sequences because of gradient vanishing and explosion. 
-- Both LSTMs and RNNs are recursive, that means they can't run parallelly on GPU, thus they are slow.
-- Transformers are sequence models that work well for large sequences are computationally faster (parallelizable on GPU)... making them ideal for language. 
+- Models for sequences of data
+- Unlike RNNs (LSTMs, GRUs..) they can handle really long sequences and are computationally fast.
 
 <img src="assets/transformers.jpeg" width="500">
+
+## Some sequence modeling problems:
+### 1. Token Classification (Named Entity Recognition)
+<img src="assets/token_classification.png" width="500">
+
+Try it [here](https://huggingface.co/dslim/bert-base-NER)
+
+### 2. Sequence Classification (Sentiment Analysis)
+<img src="assets/seq_classification.png" width="500">
+
+Try it [here](https://huggingface.co/siebert/sentiment-roberta-large-english)
+
+### 3. Language Generation -- Machine Translation
+<img src="assets/translation.png" width="500">
+
+Try it [here](https://huggingface.co/VietAI/envit5-translation)
+
+### 4. Language Generation -- Information Engine/Chat model
+<img src="assets/chatgpt.png" width="500">
+
+- It actually generated 58 words, not 50. 
+- Try it here: https://chat.openai.com/
+
+### Sequences beyond language?
+Think...
+
+### Checkout more models and tasks here: [HuggingFace](https://huggingface.co/models)
 
 # Paper: Attention is all you need
 Investment in research pays off with $$$$
@@ -27,8 +55,6 @@ For all our experiments on transformers, we will be using the huggingface transf
 
 # Input Representation
 [Colab Notebook](https://colab.research.google.com/drive/1PQBVJRsg24U7AkCbtCB5k48MQyJ4ViPn?usp=sharing)
-
-
 
 # Encoder
 [Colab Notebook](https://colab.research.google.com/drive/1hCbNZp4La34ihGAgaVtIYNLJCuq8_WLo?usp=sharing)
@@ -72,3 +98,14 @@ For all our experiments on transformers, we will be using the huggingface transf
     - Beam Search
     -  Nucleus (Top-p) Sampling
     - Top-k Sampling
+
+
+# Self Attention
+## Self Attention Equation:
+<img src="assets/self_attention.png" width="700">
+
+## Self Attention Map (in Encoders):
+<img src="assets/attention_map.png" width="400">
+
+## Masked Self Attention Map (in Decoders):
+<img src="assets/masked_attention_map.png" width="400">
